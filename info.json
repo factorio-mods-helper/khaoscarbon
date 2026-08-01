@@ -1,16 +1,19 @@
 {
-  "name": "###NAME###",
-  "title": "###TITLE###",
-  "description": "###DESC###",
+  "name": "khaoscarbon",
+  "title": "Graphite & Diamonds Revamped",
+  "description": "Adds elemental carbon items to the game, including graphite, diamonds, graphene, and more.",
   "author": "QuingKhaos",
   "homepage": "https://discord.gg/SYmkaDjFCt",
-  "version": "1.0.0",
-  "factorio_version": "2.0",
+  "version": "0.1.0",
+  "factorio_version": "2.1",
   "dependencies": [
-    "base >= 2.0.77",
+    "base >= 2.1.11",
+    "! space-age",
 
-    "khaosbash >= 1.2.0",
-    "khaoslib >= 1.19.0"
+    "khaoslib >= 2.2.0",
+
+    "! bzcarbon",
+    "! bzcarbon2"
   ],
   "package": {
     "ignore": [
