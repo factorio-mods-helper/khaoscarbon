@@ -33,3 +33,4 @@ require("__khaoscarbon__.prototypes.technology.nanotubes")
 
 require("__khaoscarbon__.prototypes.compat.base")
 require("__khaoscarbon__.prototypes.compat.basic-crusher")
+require("__khaoscarbon__.prototypes.compat.khaosfoundry")
