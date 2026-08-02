@@ -1,6 +1,7 @@
+local khaoslib_entity = require("__khaoslib__.prototypes.entity")
 local khaoslib_technology = require("__khaoslib__.prototypes.technology")
 
-khaoslib_technology:load {
+local tech = khaoslib_technology:load {
   type = "technology",
   name = "graphite-processing",
   order = "b-b",
@@ -13,5 +14,9 @@ khaoslib_technology:load {
     }
   }
   :add_unlock_recipe("graphite")
-  :add_unlock_recipe("basic-crusher")
-  :commit()
+
+if khaoslib_entity.exists("assembling-machine", "basic-crusher") then
+  tech:add_unlock_recipe("basic-crusher")
+end
+
+tech:commit()
