@@ -4,11 +4,11 @@
   "description": "Adds elemental carbon items to the game, including graphite, diamonds, graphene, and more.",
   "author": "QuingKhaos",
   "homepage": "https://discord.gg/SYmkaDjFCt",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "factorio_version": "2.1",
   "dependencies": [
     "base >= 2.1.11",
-    "quality >= 2.1.11",
+    "? quality >= 2.1.11",
     "! space-age",
 
     "flib >= 0.17.2",
