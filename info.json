@@ -4,7 +4,7 @@
   "description": "Adds elemental carbon items to the game, including graphite, diamonds, graphene, and more.",
   "author": "QuingKhaos",
   "homepage": "https://discord.gg/SYmkaDjFCt",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "factorio_version": "2.1",
   "dependencies": [
     "base >= 2.1.11",
@@ -13,7 +13,9 @@
 
     "flib >= 0.17.2",
     "khaoslib >= 2.2.0",
-    "+ khaosbasiccrusher >= 2.0.0",
+    "khaosbasiccrusher >= 2.0.0",
+    "? enable-all-feature-flags >= 1.1.0",
+
     "+ khaosfoundry >= 0.1.0",
     "? khaossilicon >= 0.1.0",
     "? khaoszirconium >= 0.1.0",

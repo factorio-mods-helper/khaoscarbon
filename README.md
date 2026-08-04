@@ -6,8 +6,6 @@ Adds elemental carbon items to the game, including flake graphite, graphite, dia
 
 Flake graphite is a mineable resource that is processed into graphite. Graphite can be used in certain recipes, and can be further processed into diamonds and graphene. Optionally (default on), graphite can be processed into fullerenes and then nanotubes. Also optionally (default off), carbon black is available as a byproduct of oil processing, used to make plastic. You can enable mineable diamonds in the mod settings.
 
-**If you don't own the Space Age DLC, you need to disable the recommended *Basic Crusher* mod or the base game won't load.**
-
 ## Remarks
 
 This revamp drops support for overhaul mods completely and currently Space Age too. Adding recycler and/or quality mod should still be possible. The focus lies at the moment to provide a consistent experience for the base game. Space Age support will be re-added in the future, as well as support for more modded planets.
