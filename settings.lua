@@ -23,3 +23,13 @@ khaoslib_setting:load {
   default_value = false,
   order = "a[settings]-c[rough-diamond]"
 } :commit()
+
+if mods["khaoschlorine"] then
+  khaoslib_setting:load {
+    type = "bool-setting",
+    name = "khaoscarbon-carbon-fiber",
+    setting_type = "startup",
+    default_value = true,
+    order = "a[settings]-d[carbon-fiber]"
+  } :commit()
+end

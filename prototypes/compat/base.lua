@@ -79,3 +79,9 @@ khaoslib_recipe:load("nuclear-reactor"):add_ingredient {type = "item", name = "g
 
 khaoslib_technology:load("rocket-silo"):add_prerequisite("graphene"):commit()
 khaoslib_recipe:load("satellite"):add_ingredient {type = "item", name = "graphene", amount = 100} :commit()
+
+if mods["khaoschlorine"] and settings.startup["khaoscarbon-carbon-fiber"].value then
+  khaoslib_recipe:load("low-density-structure"):replace_ingredient("plastic-bar", function(ingredient) ingredient.name = "carbon-fiber" return ingredient end):commit()
+  khaoslib_recipe:load("exoskeleton-equipment"):add_ingredient {type = "item", name = "carbon-fiber", amount = 10} :commit()
+  khaoslib_recipe:load("combat-shotgun"):replace_ingredient("wood", function(ingredient) ingredient.name = "carbon-fiber" return ingredient end):commit()
+end

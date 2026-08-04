@@ -1,20 +1,15 @@
 {
-    "$schema": "https://raw.githubusercontent.com/EmmyLuaLs/emmylua-analyzer-rust/refs/heads/main/crates/emmylua_code_analysis/resources/schema.json",
-    "workspace": {
-        "library": [
-            {
-                "path": "{env:FACTORIO_WORKSPACE}",
-                "ignore": [
-                    "khaoscarbon",
-                    "glutenfree"
-                ]
-            }
-        ],
-        "moduleMap": [
-            {
-                "pattern": "^(.*)$",
-                "replace": "__khaoscarbon__.$1"
-            }
-        ]
-    }
+  "$schema": "https://raw.githubusercontent.com/EmmyLuaLs/emmylua-analyzer-rust/refs/heads/main/crates/emmylua_code_analysis/resources/schema.json",
+  "workspace": {
+    "packages": [
+      "{env:FACTORIO_WORKSPACE}/flib",
+      "{env:FACTORIO_WORKSPACE}/khaoslib"
+    ],
+    "moduleMap": [
+      {
+        "pattern": "^(.*)$",
+        "replace": "__khaoscarbon__.$1"
+      }
+    ]
+  }
 }
